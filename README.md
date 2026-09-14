@@ -54,3 +54,8 @@ Os commits foram realizados de forma concisa, direta e focada em pequenas entreg
 Migração total para o uso de rotas dedicadas com o React Router para gerenciar a navegação explícita entre as quatro telas (/, /pagamento, /sucesso e /falha).
 Integração futura com uma API real de pagamentos e persistência de dados em banco de dados ou armazenamento local.
 
+## 🔍 Investigação com o Debugger
+Durante o desenvolvimento da aplicação, o debugger do navegador (Chrome DevTools) e pontos de parada (*breakpoints*) foram essenciais para investigar e validar cenários críticos:
+* **Validação de Formulário e Zod:** O debugger foi utilizado na função de envio para inspecionar o objeto retornado pelo `react-hook-form` e garantir que a limpeza de espaços e hífens no número do cartão ocorria corretamente antes da validação.
+* **Regra Antifraude:** Pontos de interrupção foram aplicados na lógica que verifica se todos os 16 dígitos do cartão são iguais, permitindo rastrear o array de dígitos e confirmar o direcionamento exato para a tela de falha com a mensagem "tentativa de golpe".
+
