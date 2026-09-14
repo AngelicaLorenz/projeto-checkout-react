@@ -1,16 +1,24 @@
-# React + Vite
+# Sistema de Checkout Profissional com Simulação Antifraude
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicação web desenvolvida em React para gerenciamento de carrinho fixo, processamento de pagamento simulado, validação avançada de formulários e verificação de regras antifraude.
 
-Currently, two official plugins are available:
+## 🚀 Objetivo do Sistema
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+O objetivo principal é simular um fluxo de e-commerce seguro, contendo um carrinho fixo com três produtos, cálculo automático de subtotais e total, tela de pagamento com validação rigorosa de dados de cartão de crédito (utilizando React Hook Form e Zod), simulação de processamento assíncrono e validação antifraude baseada em dígitos repetidos ("tentativa de golpe").
 
-## React Compiler
+## 🛠️ Tecnologias Utilizadas
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React**
+- **Vite**
+- **React Hook Form**
+- **Zod**
+- **@hookform/resolvers**
 
-## Expanding the ESLint configuration
+## 📋 Pré-requisitos e Execução
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Para executar o projeto localmente, certifique-se de possuir o [Node.js](https://nodejs.org/) instalado em sua máquina.
+
+1. Clone o repositório:
+
+   ```bash
+   git clone <url-do-repositorio>
